@@ -1,5 +1,4 @@
 import type { FC } from 'react'
-import classNames from 'classnames'
 import * as Menubar from '@radix-ui/react-menubar'
 import Link from 'next/link'
 
@@ -30,7 +29,7 @@ const menuItems = [
 
 export const MenuItems: FC<Props> = ({ className }) => {
   return (
-    <Menubar.Root className={classNames("flex bg-stone-600 p-[3px] h-full mr-3", className)}>
+    <Menubar.Root className={`flex bg-stone-600 p-[3px] h-full mr-3 ${className}`}>
       <Menubar.Menu>
         <Menubar.Trigger
           className="py-2 px-3 outline-none select-none font-medium leading-none text-white text-[13px] flex items-center justify-between gap-[2px] data-[highlighted]:bg-stone-400 data-[state=open]:bg-stone-400"
