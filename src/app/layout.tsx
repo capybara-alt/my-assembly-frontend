@@ -1,8 +1,11 @@
+import '@/app/global.css'
+import '@radix-ui/themes/styles.css'
+import { Suspense } from 'react'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Theme } from '@radix-ui/themes'
+import Loading from './loading'
+import { CustomErrorBoudary } from './_suspense/error/error-boundary'
+import DefaultLayout from '@/components/DefaultLayout/DefaultLayout'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +19,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <Theme
+          accentColor='gray'
+          appearance='dark'
+          grayColor='sand'
+          radius='large'
+          scaling='95%'
+        >
+          <DefaultLayout>
+            <CustomErrorBoudary>
+              {children}
+            </CustomErrorBoudary>
+          </DefaultLayout>
+        </Theme>
+      </body>
     </html>
   )
 }
