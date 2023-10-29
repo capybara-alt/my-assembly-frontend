@@ -29,7 +29,7 @@ export const ExpansionListTable: FC<Props> = ({ items, columns }) => {
         header: 'Name',
       }),
       ...columns.map(column => {
-        return columnHelper.accessor(snakeToCamelCase(column.propName) as keyof Expansion, {
+        return columnHelper.accessor(snakeToCamelCase(column.propName), {
           cell: w => w.getValue(),
           header: column.nameJa,
         })

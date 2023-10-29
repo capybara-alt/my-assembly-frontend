@@ -35,7 +35,7 @@ import {
 } from "@/components/Table/Table"
 
 interface Props<T> {
-  columns: ColumnDef<T, string>[]
+  columns: ColumnDef<T>[]
   data: T[]
   pageSizeOptions?: number[]
 }

@@ -33,7 +33,7 @@ export const FrameListTable: FC<Props> = ({ items, columns }) => {
         header: 'Unit',
       }),
       ...columns.map(column => {
-        return columnHelper.accessor(snakeToCamelCase(column.propName) as keyof Frame, {
+        return columnHelper.accessor(snakeToCamelCase(column.propName), {
           cell: w => w.getValue(),
           header: column.nameJa,
         })
