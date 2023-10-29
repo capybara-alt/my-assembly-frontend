@@ -33,7 +33,7 @@ export const WeaponListTable: FC<Props> = ({ items, columns }) => {
         header: 'Unit'
       }),
       ...columns.map(column => {
-        return columnHelper.accessor(snakeToCamelCase(column.propName), {
+        return columnHelper.accessor(snakeToCamelCase(column.propName) as keyof Weapon, {
           cell: w => w.getValue(),
           header: column.nameJa,
         })

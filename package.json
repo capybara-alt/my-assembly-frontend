@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@buf/capybara_my-assemble.bufbuild_es": "1.4.1-20231026155911-c9f2d57f2eff.1",
     "@buf/capybara_my-assemble.connectrpc_es": "^1.1.2-20231022103129-94bf086528ae.1",
     "@connectrpc/connect": "^1.1.3",
     "@connectrpc/connect-web": "^1.1.3",

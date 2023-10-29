@@ -5,15 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@buf/capybara_my-assemble.bufbuild_es':
+    specifier: 1.4.1-20231026155911-c9f2d57f2eff.1
+    version: 1.4.1-20231026155911-c9f2d57f2eff.1(@bufbuild/protobuf@1.4.1)
   '@buf/capybara_my-assemble.connectrpc_es':
     specifier: ^1.1.2-20231022103129-94bf086528ae.1
-    version: 1.1.2-20231026155911-c9f2d57f2eff.2(@bufbuild/protobuf@1.4.0)(@connectrpc/connect@1.1.3)
+    version: 1.1.2-20231026155911-c9f2d57f2eff.2(@bufbuild/protobuf@1.4.1)(@connectrpc/connect@1.1.3)
   '@connectrpc/connect':
     specifier: ^1.1.3
-    version: 1.1.3(@bufbuild/protobuf@1.4.0)
+    version: 1.1.3(@bufbuild/protobuf@1.4.1)
   '@connectrpc/connect-web':
     specifier: ^1.1.3
-    version: 1.1.3(@bufbuild/protobuf@1.4.0)(@connectrpc/connect@1.1.3)
+    version: 1.1.3(@bufbuild/protobuf@1.4.1)(@connectrpc/connect@1.1.3)
   '@emotion/react':
     specifier: ^11.11.1
     version: 11.11.1(@types/react@18.2.33)(react@18.2.0)
@@ -150,45 +153,53 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@buf/capybara_my-assemble.bufbuild_es@1.3.3-20231026155911-c9f2d57f2eff.1(@bufbuild/protobuf@1.4.0):
+  /@buf/capybara_my-assemble.bufbuild_es@1.3.3-20231026155911-c9f2d57f2eff.1(@bufbuild/protobuf@1.4.1):
     resolution: {registry: https://buf.build/gen/npm/v1/, tarball: https://buf.build/gen/npm/v1/@buf/capybara_my-assemble.bufbuild_es/-/capybara_my-assemble.bufbuild_es-1.3.3-20231026155911-c9f2d57f2eff.1.tgz}
     peerDependencies:
       '@bufbuild/protobuf': ^1.3.3
     dependencies:
-      '@bufbuild/protobuf': 1.4.0
+      '@bufbuild/protobuf': 1.4.1
     dev: false
 
-  /@buf/capybara_my-assemble.connectrpc_es@1.1.2-20231026155911-c9f2d57f2eff.2(@bufbuild/protobuf@1.4.0)(@connectrpc/connect@1.1.3):
+  /@buf/capybara_my-assemble.bufbuild_es@1.4.1-20231026155911-c9f2d57f2eff.1(@bufbuild/protobuf@1.4.1):
+    resolution: {registry: https://buf.build/gen/npm/v1/, tarball: https://buf.build/gen/npm/v1/@buf/capybara_my-assemble.bufbuild_es/-/capybara_my-assemble.bufbuild_es-1.4.1-20231026155911-c9f2d57f2eff.1.tgz}
+    peerDependencies:
+      '@bufbuild/protobuf': ^1.4.1
+    dependencies:
+      '@bufbuild/protobuf': 1.4.1
+    dev: false
+
+  /@buf/capybara_my-assemble.connectrpc_es@1.1.2-20231026155911-c9f2d57f2eff.2(@bufbuild/protobuf@1.4.1)(@connectrpc/connect@1.1.3):
     resolution: {registry: https://buf.build/gen/npm/v1/, tarball: https://buf.build/gen/npm/v1/@buf/capybara_my-assemble.connectrpc_es/-/capybara_my-assemble.connectrpc_es-1.1.2-20231026155911-c9f2d57f2eff.2.tgz}
     peerDependencies:
       '@connectrpc/connect': ^1.1.2
     dependencies:
-      '@buf/capybara_my-assemble.bufbuild_es': 1.3.3-20231026155911-c9f2d57f2eff.1(@bufbuild/protobuf@1.4.0)
-      '@connectrpc/connect': 1.1.3(@bufbuild/protobuf@1.4.0)
+      '@buf/capybara_my-assemble.bufbuild_es': 1.3.3-20231026155911-c9f2d57f2eff.1(@bufbuild/protobuf@1.4.1)
+      '@connectrpc/connect': 1.1.3(@bufbuild/protobuf@1.4.1)
     transitivePeerDependencies:
       - '@bufbuild/protobuf'
     dev: false
 
-  /@bufbuild/protobuf@1.4.0:
-    resolution: {integrity: sha512-urGGNsMG8YIyuhsjLFkx41CkAILFnUz9vHaUWvzOnzeoS2DykhSkUEpqTbf9cxG0Vzjmk2rl5ttmLwE0rbQyow==}
+  /@bufbuild/protobuf@1.4.1:
+    resolution: {integrity: sha512-4dthhwBGD9nlpY35ic8dMQC5R0dsND2b2xyeVO3qf+hBk8m7Y9dUs+SmMh6rqO2pGLUTKHefGXLDW+z19hBPdQ==}
     dev: false
 
-  /@connectrpc/connect-web@1.1.3(@bufbuild/protobuf@1.4.0)(@connectrpc/connect@1.1.3):
+  /@connectrpc/connect-web@1.1.3(@bufbuild/protobuf@1.4.1)(@connectrpc/connect@1.1.3):
     resolution: {integrity: sha512-WfShOZt91duJngqivYF4wJFRbeRa4bF/fPMfDVN0MAYSX3VuaTMn8o9qgKN7tsg2H2ZClyOVQwMkZx6IdcP7Zw==}
     peerDependencies:
       '@bufbuild/protobuf': ^1.3.3
       '@connectrpc/connect': 1.1.3
     dependencies:
-      '@bufbuild/protobuf': 1.4.0
-      '@connectrpc/connect': 1.1.3(@bufbuild/protobuf@1.4.0)
+      '@bufbuild/protobuf': 1.4.1
+      '@connectrpc/connect': 1.1.3(@bufbuild/protobuf@1.4.1)
     dev: false
 
-  /@connectrpc/connect@1.1.3(@bufbuild/protobuf@1.4.0):
+  /@connectrpc/connect@1.1.3(@bufbuild/protobuf@1.4.1):
     resolution: {integrity: sha512-AXkbsLQe2Nm7VuoN5nqp05GEb9mPa/f5oFzDqTbHME4i8TghTrlY03uefbhuAq4wjsnfDnmuxHZvn6ndlgXmbg==}
     peerDependencies:
       '@bufbuild/protobuf': ^1.3.3
     dependencies:
-      '@bufbuild/protobuf': 1.4.0
+      '@bufbuild/protobuf': 1.4.1
     dev: false
 
   /@emotion/babel-plugin@11.11.0:

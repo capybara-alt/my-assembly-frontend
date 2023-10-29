@@ -33,7 +33,7 @@ export const InnerUnitListTable: FC<Props> = ({ items, columns }) => {
         header: 'Unit'
       }),
       ...columns.map(column => {
-        return columnHelper.accessor(snakeToCamelCase(column.propName), {
+        return columnHelper.accessor(snakeToCamelCase(column.propName) as keyof InnerUnit, {
           cell: w => w.getValue(),
           header: column.nameJa,
         })
