@@ -1,10 +1,8 @@
 import '@/app/global.css'
 import '@radix-ui/themes/styles.css'
-import { Suspense } from 'react'
 import type { Metadata } from 'next'
 import { Theme } from '@radix-ui/themes'
-import Loading from './loading'
-import { CustomErrorBoudary } from './_suspense/error/error-boundary'
+import { CustomErrorBoudary } from '@/suspense/error/error-boundary'
 import DefaultLayout from '@/components/DefaultLayout/DefaultLayout'
 
 export const metadata: Metadata = {
